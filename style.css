@@ -1,0 +1,100 @@
+/* font */
+@font-face {
+    font-family: dogicapixelbold;
+    src: url('OTF/dogicapixelbold.otf');
+}
+
+body{
+    padding: 0;
+    margin: 0;
+    background-image: url(img/bg_body.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: dogicapixelbold;
+}
+
+h4{
+    font-size: 20px;
+}
+
+p{
+    font-size: 13px;
+}
+
+h4, p{
+    text-align: center;
+    height: fit-content;
+}
+
+h4, p, #timer, #skor{
+    background: #fce205;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+#bar, #bar1{
+    padding: 25px 7%;
+    margin: auto;
+    display: flex;
+}
+
+#bar{
+    height: 20px;
+    width: 500px;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+#bar1{
+    height: 30px;
+    width: 502px; 
+    justify-content: center;
+}
+
+
+/* style game-box */
+#game-box{
+    width: 500px;
+    height: 300px;
+    margin: auto;
+    border: 1px solid black;
+    background-image: url(img/bg_game.jpeg);
+    background-size: cover;
+    opacity: 0.9;
+}
+
+/* style character */
+#chara{
+    width: 45px;
+    height: 130px;
+    background-image: url(img/chara.png);
+    background-size: cover;
+    position: relative;
+    top: 80px;
+    margin: auto;
+}
+.animasiLompat{
+    animation: lompat 500ms;
+}
+@keyframes lompat {
+    0%{ top: 80px; }
+    50%{ top: -15px; }
+    100%{ top: 80px; }
+}
+
+/* style kerupuk */
+#kerupuk{
+    width: 66px;
+    height: 90px;
+    background-image: url(img/kerupuk.png);
+    background-size: cover;
+    position: relative;
+    top: 0;
+    left: 434px;
+    animation: kerupuk 1s infinite linear;
+}
+
+@keyframes kerupuk{
+    0%{ left: 434px; }
+    100%{ left: 0px; }
+}
